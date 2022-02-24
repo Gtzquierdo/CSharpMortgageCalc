@@ -18,5 +18,7 @@ namespace CSharpMortgageCalc.Models
         public decimal TotalInterest { get; set; }
 
         public decimal TotalCost { get; set; }
+
+        public List<LoanPayment> Payments { get; set; } = new List<LoanPayment>();
     }
 }
