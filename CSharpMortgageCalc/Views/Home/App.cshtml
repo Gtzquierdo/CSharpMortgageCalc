@@ -19,7 +19,7 @@
 
                     <div class=" form-group col-12">
                         <label asp-for="Rate">Loan Rate:</label>
-                        <input type="number" class="form-control" id="lrate" min="1" value=@Model.Rate asp-for="Rate"/>
+                        <input type="number" class="form-control" id="lrate" min="1" step=".5" value=@Model.Rate asp-for="Rate"/>
                     </div>
                 </div>
                 <button type="submit"class="btn btn-dark mt-2">Calculate</button>
