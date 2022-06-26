@@ -38,6 +38,16 @@ namespace CSharpMortgageCalc.Controllers
             return View(loan);
         }
 
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult App(Loan loan)
+        {
+            //Calculate the loan
+                       
+            
+            return View(loan);
+        }
+
         public IActionResult Privacy()
         {
             return View();
